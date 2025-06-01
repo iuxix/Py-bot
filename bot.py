@@ -5,7 +5,7 @@ from datetime import datetime, timedelta
 from telegram.ext import Updater, CommandHandler, ConversationHandler, MessageHandler, Filters
 
 # --- Tokens ---
-BOT_TOKEN = "8189332133:AAFMeX5HxkMPqmYDRNOHs8W8JlhzQJRmVhE"
+BOT_TOKEN = os.getenv("BOT_TOKEN")
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
 ADMIN_ID = 6987518006  # Replace with your Telegram ID
 
