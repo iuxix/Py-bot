@@ -1,11 +1,12 @@
 import base64
 import requests
+import os
 from datetime import datetime, timedelta
 from telegram.ext import Updater, CommandHandler, ConversationHandler, MessageHandler, Filters
 
 # --- Tokens ---
 BOT_TOKEN = "8189332133:AAFMeX5HxkMPqmYDRNOHs8W8JlhzQJRmVhE"
-GITHUB_TOKEN = "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"
+GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
 ADMIN_ID = 6987518006  # Replace with your Telegram ID
 
 # --- GitHub repo config ---
